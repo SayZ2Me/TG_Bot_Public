@@ -122,7 +122,6 @@ def main():
 
     print('Bot connected to telegram.')
     print('Token - {}'.format(TG_Token))
-    print('Proxy adress - {}'.format(REQUEST_KWARGS.get('proxy_url')))
     print('Request handling started.')
     
     updater.idle()
