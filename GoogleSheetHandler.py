@@ -3,7 +3,9 @@ from oauth2client.service_account import ServiceAccountCredentials
 import datetime
 import time
 
-scope = ['https://spreadsheets.google.com/feeds']
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+
 creds = ServiceAccountCredentials.from_json_keyfile_name('Auth_Data.json', scope)
 client = gspread.authorize(creds)
 
